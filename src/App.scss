@@ -1,0 +1,86 @@
+@import 'reset.scss';
+@import 'colors.scss';
+
+
+
+body {
+  font-family: sans-serif;
+  font-size: 40px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.site-header{
+  text-align:center;
+  color:white;
+  background-color:$RLR;
+}
+
+
+.site-wrap{
+  padding-top:2%;
+ 
+  display:grid;
+  grid-template-columns: 45% 45%;
+  justify-content: space-evenly;
+  background-color:lightblue;
+ 
+
+}
+
+
+
+.header{
+
+}
+
+[class*="-panel"]{
+  border-style:solid;
+  border-width: 5px;
+
+}
+
+[class*="-content"]{
+
+
+  div{
+    padding-bottom:2rem;
+  }
+
+  h2{
+    padding-top:1rem; 
+    padding-bottom:1.5rem;
+    text-decoration:underline;
+  }
+
+  p{
+    padding-bottom:.75rem;
+  }
+
+};
+
+[class*="-controls"]{
+
+  display:grid;
+  grid-template-columns: 30% 30% 30% 10%;
+ 
+ .rdn{
+   display:inline-block;
+ }
+}
+
+[class*="-banner"]{
+
+    background-color:$RLR;
+    color:white;
+};
+
+
+.go-button{
+background-color:black;
+color:white;
+display:flex;
+align-items:center;
+justify-items:center;
+justify-content: center;
+}
